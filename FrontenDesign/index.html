@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" /> 
+    <title>Donemmynaija Properties</title> <!--end of title-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+</head> <!--end of head-->
+<body>
+
+    <div class="navbar">
+
+        <div class="navOne">
+
+            <a href="#"><div class="logo"><div class="d-box">d</div><!--end of d-->
+            donemmynaijaPro</div></a><!--end of logo-->
+
+            <div class="mainmenu">
+
+                <a href="#">buy</a>
+                <a href="#">rent</a>
+                <a href="#">new projects</a>
+                <a href="#">shortlets</a>
+                <a href="#">services</a>
+                <a href="#">agents</a>
+                <a href="#">area guide</a>
+                <a href="#">insights</a>
+                <a href="#">blogs</a>
+
+            </div><!--end of mainmenu-->
+
+        </div><!--end of navOne-->
+
+        <div class="navTwo">
+
+            <a href="#"><div class="post_properties">post Properties</div></a>
+            <a href="#"><div class="post_properties">register</div></a>
+            <a href="#"><div class="post_properties">login</div></a>
+
+        </div><!--end of navTwo-->
+
+
+
+
+    </div><!--end of navbar-->
+
+
+    <div class="main-container">
+
+     <div class="container">
+        <div class="find-your-next-home">Find your Next Home</div>
+        
+        <div class="search-widget">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="switchTab('buy')">Buy</button>
+                <button class="tab-btn" onclick="switchTab('rent')">Rent</button>
+                <button class="tab-btn" onclick="switchTab('shortlet')">Short Let</button>
+                <button class="tab-btn" onclick="switchTab('land')">Land</button>
+            </div>
+
+            <div class="search-input-wrapper">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="searchInput" placeholder="Search sale...">
+                <input type="hidden" id="categoryInput" value="buy">
+                <button class="search-btn" onclick="performSearch()">Search</button>
+            </div>
+
+            <div class="filters">
+                <div class="filter-item">
+                    <div class="select-wrapper">
+                        <select class="custom-select">
+                            <option value="">Type</option>
+                            <option value="flat">Flat</option>
+                            <option value="duplex">Duplex</option>
+                        </select>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                
+                <div class="filter-item">
+                    <div class="select-wrapper">
+                        <select class="custom-select">
+                            <option value="">Bedrooms</option>
+                            <option value="1">1 Bedroom</option>
+                            <option value="2">2 Bedrooms</option>
+                            <option value="3">3 Bedrooms</option>
+                        </select>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <div class="select-wrapper">
+                        <select class="custom-select">
+                            <option value="">Min. Price</option>
+                            <option value="100000">100,000</option>
+                            <option value="500000">500,000</option>
+                        </select>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <div class="filter-item">
+                    <div class="select-wrapper">
+                        <select class="custom-select">
+                            <option value="">Max. Price</option>
+                            <option value="1000000">1,000,000</option>
+                            <option value="50000000">50,000,000</option>
+                        </select>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div><!--end of main container-->
+
+<div class="agent-container-logo">
+    partnerships
+    <div class="agent-logo-one"></div>
+    <div class="agent-logo-two"></div>
+    <div class="agent-logo-three"></div>
+
+
+</div><!--end of agent container logo-->
+
+
+
+<div class="featured-container">
+
+    <div class="featured-header">
+        featured projects
+    </div><!--end of featured header-->
+
+    <div class="align-body">
+    <a href="#"><div class="featured-body">
+    <div class="featured-pictures">
+
+    </div><!--end of featured pictures-->
+
+    <div class="sub-header">the venice</div>
+
+    <div class="location">abule egba, lagos</div>
+
+    <div class="align-description-logo">
+
+        <div class="description">homeland development co . 4 toilets . 5 bathrooms
+            6 bedrooms . 20 kitchens
+        </div>
+
+        <div class="logo-featured"></div>
+
+
+
+    </div><!--end of align description logo-->
+
+    </div></a><!--end of featured body-->
+
+
+    <a href="#"><div class="featured-body">
+    <div class="featured-pictures-two">
+
+    </div><!--end of featured pictures-->
+
+    <div class="sub-header">donemmynaija estate</div>
+
+    <div class="location">victoria-island, lagos</div>
+
+        <div class="align-description-logo">
+
+        <div class="description">donemmynaija estate co . 4 toilets . 5 bathrooms
+            6 bedrooms . 20 kitchens
+        </div>
+
+        <div class="logo-featured-two"></div>
+
+
+
+    </div><!--end of align description logo-->
+
+    </div></a><!--end of featured body-->
+    </div><!--end of align body-->
+
+
+
+</div><!--end of featured container-->
+
+
+
+<div class="featured-container">
+
+    <div class="featured-header">
+        featured homes
+    </div><!--end of featured header-->
+
+    <div class="align-homes">
+    
+    <a href="#"><div class="featured-homes">
+    <div class="featured-homes-pictures">
+
+    </div><!--end of featured homes pictures-->
+
+        <div class="align-homes-description-logo">
+
+        <div class="description-homes">newly built 2 bedrooms apartments
+        </div>
+
+
+
+    </div><!--end of align description logo-->
+
+    <div class="sub-header-homes">N1,200,000</div>
+
+    <div class="location-homes">abule egba, lagos</div>
+
+        </div><!--end of align homes description logo-->
+
+    <a href="#"><div class="featured-homes">
+    <div class="featured-homes-pictures-two">
+
+    </div><!--end of featured homes pictures-->
+
+        <div class="align-homes-description-logo">
+
+        <div class="description-homes">newly built 2 bedrooms apartments
+        </div>
+
+
+
+    </div><!--end of align description logo-->
+
+    <div class="sub-header-homes">N20,200,000</div>
+
+    <div class="location-homes">ikeja osun, abuja</div>
+
+        </div><!--end of align homes description logo-->
+
+
+    
+    
+     <a href="#"><div class="featured-homes">
+    <div class="featured-homes-pictures-three">
+
+    </div><!--end of featured homes pictures-->
+
+        <div class="align-homes-description-logo">
+
+        <div class="description-homes">life built 5 toilets apartments
+        </div>
+
+
+
+    </div><!--end of align description logo-->
+
+    <div class="sub-header-homes">N120,200,000</div>
+
+    <div class="location-homes">alopo, abuja</div>
+
+        </div><!--end of align homes description logo-->
+
+   
+
+    </div></a><!--end of featured home-->
+    
+
+    </div><!--end of align homes-->
+
+
+
+</div><!--end of featured container-->
+
+
+<div class="featured-container">
+
+    <div class="featured-header">
+        real estate partners
+    </div><!--end of featured header-->
+
+    <div class="align-homes">
+
+    <div class="agent-logo-one"></div>
+    <div class="agent-logo-two"></div>
+    <div class="agent-logo-three"></div>
+    <div class="agent-logo-two"></div>
+    <div class="agent-logo-one"></div>
+
+    </div><!--end of align- homes-->
+
+
+</div><!--end of feaured container-->
+
+
+
+
+
+
+
+<div class="featured-container">
+
+    <div class="featured-header">
+        homes with videos
+    </div><!--end of featured header-->
+
+    <div class="align-homes-with-videos">
+    
+    <a href="#"><div class="featured-homes-with-videos">
+    <div class="featured-homes-with-videos-pictures">
+
+    </div><!--end of featured homes pictures-->
+
+        <div class="align-homes-with-videos-description-logo">
+
+        <div class="description-homes-with-videos">newly built 2 bedrooms apartments
+        </div>
+
+
+
+    </div><!--end of align description logo-->
+
+    <div class="sub-header-homes-with-videos">N1,200,000</div>
+
+    <div class="location-homes-with-videos">abule egba, lagos</div>
+
+        </div><!--end of align homes description logo-->
+
+
+
+    <a href="#"><div class="featured-homes-with-videos">
+    <div class="featured-homes-with-videos-pictures-two">
+
+    </div><!--end of featured homes pictures-->
+
+        <div class="align-homes-with-videos-description-logo">
+
+        <div class="description-homes-with-videos">newly built 2 bedrooms apartments
+        </div>
+
+
+
+    </div><!--end of align description logo-->
+
+    <div class="sub-header-homes-with-videos">N20,200,000</div>
+
+    <div class="location-homes-with-videos">ikeja osun, abuja</div>
+
+        </div><!--end of align homes description logo-->
+
+
+    
+    
+     <a href="#"><div class="featured-homes-with-videos">
+    <div class="featured-homes-with-videos-pictures-three">
+
+    </div><!--end of featured homes pictures-->
+
+        <div class="align-homes-with-videos-description-logo">
+
+        <div class="description-homes-with-videos">life built 5 toilets apartments
+        </div>
+
+
+
+    </div><!--end of align description logo-->
+
+    <div class="sub-header-homes-with-videos">N120,200,000</div>
+
+    <div class="location-homes-with-videos">alopo, abuja</div>
+
+        </div><!--end of align homes description logo-->
+
+
+     <a href="#"><div class="featured-homes-with-videos">
+    <div class="featured-homes-with-videos-pictures-three">
+
+    </div><!--end of featured homes pictures-->
+
+        <div class="align-homes-with-videos-description-logo">
+
+        <div class="description-homes-with-videos">life built 5 toilets apartments
+        </div>
+
+
+
+    </div><!--end of align description logo-->
+
+    <div class="sub-header-homes-with-videos">N120,200,000</div>
+
+    <div class="location-homes-with-videos">alopo, abuja</div>
+
+        </div><!--end of align homes description logo-->
+
+   
+
+    </div></a><!--end of featured home-->
+
+   
+
+    </div></a><!--end of featured home-->
+
+    
+
+    </div><!--end of align homes-->
+
+
+
+</div><!--end of featured container-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="featured-container">
+
+    <div class="featured-header">
+        luxury homes
+    </div><!--end of featured header-->
+
+    <div class="align-homes-with-videos">
+    
+    <a href="#"><div class="featured-homes-with-videos">
+    <div class="featured-homes-with-videos-pictures">
+
+    </div><!--end of featured homes pictures-->
+
+        <div class="align-homes-with-videos-description-logo">
+
+        <div class="description-homes-with-videos">newly built 2 bedrooms apartments
+        </div>
+
+
+
+    </div><!--end of align description logo-->
+
+    <div class="sub-header-homes-with-videos">N1,200,000</div>
+
+    <div class="location-homes-with-videos">abule egba, lagos</div>
+
+        </div><!--end of align homes description logo-->
+
+
+
+    <a href="#"><div class="featured-homes-with-videos">
+    <div class="featured-homes-with-videos-pictures-two">
+
+    </div><!--end of featured homes pictures-->
+
+        <div class="align-homes-with-videos-description-logo">
+
+        <div class="description-homes-with-videos">newly built 2 bedrooms apartments
+        </div>
+
+
+
+    </div><!--end of align description logo-->
+
+    <div class="sub-header-homes-with-videos">N20,200,000</div>
+
+    <div class="location-homes-with-videos">ikeja osun, abuja</div>
+
+        </div><!--end of align homes description logo-->
+
+
+    
+    
+     <a href="#"><div class="featured-homes-with-videos">
+    <div class="featured-homes-with-videos-pictures-three">
+
+    </div><!--end of featured homes pictures-->
+
+        <div class="align-homes-with-videos-description-logo">
+
+        <div class="description-homes-with-videos">life built 5 toilets apartments
+        </div>
+
+
+
+    </div><!--end of align description logo-->
+
+    <div class="sub-header-homes-with-videos">N120,200,000</div>
+
+    <div class="location-homes-with-videos">alopo, abuja</div>
+
+        </div><!--end of align homes description logo-->
+
+
+     <a href="#"><div class="featured-homes-with-videos">
+    <div class="featured-homes-with-videos-pictures-three">
+
+    </div><!--end of featured homes pictures-->
+
+        <div class="align-homes-with-videos-description-logo">
+
+        <div class="description-homes-with-videos">life built 5 toilets apartments
+        </div>
+
+
+
+    </div><!--end of align description logo-->
+
+    <div class="sub-header-homes-with-videos">N120,200,000</div>
+
+    <div class="location-homes-with-videos">alopo, abuja</div>
+
+        </div><!--end of align homes description logo-->
+
+   
+
+    </div></a><!--end of featured home-->
+
+   
+
+    </div></a><!--end of featured home-->
+
+    
+
+    </div><!--end of align homes-->
+
+
+
+</div><!--end of featured container-->
+
+
+
+
+
+
+<div class="maincontent-for-index">
+
+
+<header class="dashboard-header">
+        <h1>Real Estate Price Index</h1>
+        <p>Explore Property Indices</p>
+        
+        <div class="header-actions" id="buy-rent-toggle">
+            <button class="btn btn-primary active" data-mode="buy">Buy</button>
+            <button class="btn btn-secondary" data-mode="rent">Rent</button>
+        </div>
+        
+        <div class="search-bar">
+            <div class="select-group">
+                <label for="state">State</label>
+                <select id="state-select">
+                    <option>Select City</option>
+                    <option value="lagos">Lagos</option>
+                    <option value="abuja">Abuja</option>
+                </select>
+            </div>
+            <div class="select-group">
+                <label for="property-type">Property Type</label>
+                <select id="type-select">
+                    <option>All</option>
+                    <option value="house">House</option>
+                    <option value="land">Lands</option>
+                </select>
+            </div>
+            <button class="btn btn-view" id="view-button">
+                <i class="fas fa-chart-line"></i> View
+            </button>
+        </div>
+    </header>
+
+    <main class="dashboard-content">
+
+        <section class="state-prices">
+            <h2>Average Property Prices in Most Popular States Across Nigeria</h2>
+            <div class="state-cards-container" id="state-cards-container">
+                </div>
+        </section>
+        
+        <hr>
+
+        <section class="trends-market-container">
+            
+            <div class="trends-section">
+                
+                <h2>Property Price and Index Trends in Nigeria</h2>
+                
+                <div class="filter-tabs property-type-tabs" id="property-type-tabs">
+                    <button class="tab-btn active" data-type="house">House</button>
+                    <button class="tab-btn" data-type="land">Lands</button>
+                    <button class="tab-btn" data-type="flat">Flats/ Apartments</button>
+                    <button class="tab-btn" data-type="commercial">Commercial Property</button>
+                </div>
+                
+                <div class="filter-tabs bedroom-tabs" id="bedroom-tabs">
+                    <button class="tab-btn active" data-bedrooms="3">3 Bedroom</button>
+                    <button class="tab-btn" data-bedrooms="1">1 Bedroom</button>
+                    <button class="tab-btn" data-bedrooms="2">2 Bedroom</button>
+                    <button class="tab-btn" data-bedrooms="4">4 Bedroom</button>
+                    <button class="tab-btn" data-bedrooms="5">5 Bedroom</button>
+                </div>
+
+                <div class="price-index-toggle" id="price-index-toggle">
+                    <button class="toggle-btn active" data-view="price">Price</button>
+                    <button class="toggle-btn" data-view="index">Index</button>
+                </div>
+
+                <div class="chart-and-history-or-market">
+                    
+                    <div class="trends-chart-and-history" id="trends-chart-section">
+                        <div class="chart-container">
+                            <h3>Price Change Graph</h3>
+                            <canvas id="priceChangeChart"></canvas>
+                            <div class="time-range-filter">
+                                <button data-range="6m">6M</button>
+                                <button data-range="1y">1Y</button>
+                                <button class="active" data-range="max">MAX</button>
+                            </div>
+                        </div>
+
+                        <div class="historical-data">
+                            <div class="average-price-box">
+                                <p>Average House Price for last month</p>
+                                <p class="avg-price-value" id="avg-price-value">NGR 242.50 million</p>
+                                <p class="price-change-last-6m">Price Change in last 6 months</p>
+                                <p class="change-value green">NGR 0.00 <span class="percentage">0.00 %</span> <i class="fas fa-arrow-up"></i></p>
+                            </div>
+                            <div class="historical-list" id="historical-list">
+                                <h4>Historical Price</h4>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="market-overview-section hidden" id="market-overview-section">
+                        <h2 class="market-title">Market Overview of Nigeria</h2>
+                        <span class="market-badge">Property Index</span>
+                        
+                        <div class="gainers-losers-container">
+                            
+                            <div class="market-card gainers-card">
+                                <div class="card-header">
+                                    <span class="icon green-bg">📈</span>
+                                    <h3>Top Gainers</h3>
+                                    <span class="date">12/2025</span>
+                                </div>
+                                <div class="data-list" id="gainers-list">
+                                    </div>
+                            </div>
+                            
+                            <div class="market-card losers-card">
+                                <div class="card-header">
+                                    <span class="icon red-bg">📉</span>
+                                    <h3>Top Losers</h3>
+                                    <span class="date">12/2025</span>
+                                </div>
+                                <div class="data-list" id="losers-list">
+                                    </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+
+
+</div> <!--end of main content for index-->
+
+
+
+
+<footer>
+
+    <div class="footerOnealign">
+    <div class="footerOne">
+         <div class="footerOneHeadline">personal</div>
+         <div class="footerOnesubheadline">savings account</div>
+         <div class="footerOnesubheadline">current accounts</div>
+         <div class="footerOnesubheadline">compare account</div>
+         <div class="footerOnesubheadline">cards</div>
+         <div class="footerOnesubheadline">non resisdent nigerian service</div>
+         <div class="footerOnesubheadline">loans</div>
+         <div class="footerOnesubheadline">ways to bank</div>
+         <div class="footerOnesubheadline">private banking</div>
+         <div class="footerOnesubheadline">opening accounts</div>
+
+
+    </div> <!--end of footerOne-->
+
+
+    <div class="footerOne">
+         <div class="footerOneHeadline">personal</div>
+         <div class="footerOnesubheadline">savings account</div>
+         <div class="footerOnesubheadline">current accounts</div>
+         <div class="footerOnesubheadline">compare account</div>
+         <div class="footerOnesubheadline">cards</div>
+         <div class="footerOnesubheadline">non resisdent nigerian service</div>
+         <div class="footerOnesubheadline">loans</div>
+         <div class="footerOnesubheadline">ways to bank</div>
+         <div class="footerOnesubheadline">private banking</div>
+         <div class="footerOnesubheadline">opening accounts</div>
+
+
+    </div> <!--end of footerOne-->
+
+
+    <div class="footerOne">
+         <div class="footerOneHeadline">personal</div>
+         <div class="footerOnesubheadline">savings account</div>
+         <div class="footerOnesubheadline">current accounts</div>
+         <div class="footerOnesubheadline">compare account</div>
+         <div class="footerOnesubheadline">cards</div>
+         <div class="footerOnesubheadline">non resisdent nigerian service</div>
+         <div class="footerOnesubheadline">loans</div>
+         <div class="footerOnesubheadline">ways to bank</div>
+         <div class="footerOnesubheadline">private banking</div>
+         <div class="footerOnesubheadline">opening accounts</div>
+
+
+    </div> <!--end of footerOne-->
+
+
+    <div class="footerOne">
+         <div class="footerOneHeadline">personal</div>
+         <div class="footerOnesubheadline">savings account</div>
+         <div class="footerOnesubheadline">current accounts</div>
+         <div class="footerOnesubheadline">compare account</div>
+         <div class="footerOnesubheadline">cards</div>
+         <div class="footerOnesubheadline">non resisdent nigerian service</div>
+         <div class="footerOnesubheadline">loans</div>
+         <div class="footerOnesubheadline">ways to bank</div>
+         <div class="footerOnesubheadline">private banking</div>
+         <div class="footerOnesubheadline">opening accounts</div>
+
+
+    </div> <!--end of footerOne-->
+
+
+    <div class="footerOne">
+         <div class="footerOneHeadline">personal</div>
+         <div class="footerOnesubheadline">savings account</div>
+         <div class="footerOnesubheadline">current accounts</div>
+         <div class="footerOnesubheadline">compare account</div>
+         <div class="footerOnesubheadline">cards</div>
+         <div class="footerOnesubheadline">non resisdent nigerian service</div>
+         <div class="footerOnesubheadline">loans</div>
+         <div class="footerOnesubheadline">ways to bank</div>
+         <div class="footerOnesubheadline">private banking</div>
+         <div class="footerOnesubheadline">opening accounts</div>
+
+
+    </div> <!--end of footerOne-->
+
+    <div class="footerOne">
+         <div class="footerOneHeadline">personal</div>
+         <div class="footerOnesubheadline">savings account</div>
+         <div class="footerOnesubheadline">current accounts</div>
+         <div class="footerOnesubheadline">compare account</div>
+         <div class="footerOnesubheadline">cards</div>
+         <div class="footerOnesubheadline">non resisdent nigerian service</div>
+         <div class="footerOnesubheadline">loans</div>
+         <div class="footerOnesubheadline">ways to bank</div>
+         <div class="footerOnesubheadline">private banking</div>
+         <div class="footerOnesubheadline">opening accounts</div>
+
+
+    </div> <!--end of footerOne-->
+
+</div><!--end of footerOnealign-->
+
+
+<div class="footerTwo">
+       
+    <div class="gtConnectLogo"></div>
+
+    <div class="number">+2348127982357  +2348127982357  +2348127982357  +2348127982357 
+        +2348127982357  +2348127982357  +2348127982357  +2348127982357
+        +2348127982357  +2348127982357  +2348127982357  +2348127982357
+    </div>
+ 
+
+</div> <!--end of footer two-->
+
+</footer>
+
+<div class="lastFooter">
+  Copyright &copy; designed by donemmynaija software development
+</div>
+
+
+
+
+
+
+<script src="apps.js"></script>
+
+
+</body> <!--end of body-->
+</html> <!--end of html-->
